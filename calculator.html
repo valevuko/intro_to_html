@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-    
     <title>
         Calculator
     </title>
@@ -22,11 +21,17 @@
     <input type="number" id="number2">
     <br>
     <br>
-    <button onClick
+    <button onClick="multiplyBy()" value="multiply">
         Calculate
     </button>
     <script>
-        let Z = number1 + number2
+        function multiplyBy() {
+            let x= document.getElementById("number1").value
+            console.log(x)
+            let y= document.getElementById("number2").value
+            console.log(y)
+            alert(Number(x) + Number (y))
+        }
     </script>
 </body>
 </head>
